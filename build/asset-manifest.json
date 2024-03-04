@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9e54a20a.css",
+    "main.js": "/static/js/main.78b45c1a.js",
+    "static/js/453.9537af23.chunk.js": "/static/js/453.9537af23.chunk.js",
+    "static/js/213.ff2e7141.chunk.js": "/static/js/213.ff2e7141.chunk.js",
+    "static/js/732.b8c4c55b.chunk.js": "/static/js/732.b8c4c55b.chunk.js",
+    "static/media/primeicons.svg": "/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/Inter-italic.var.woff2?v=3.19": "/static/media/Inter-italic.var.30807be7abc48ba8c73c.woff2",
+    "static/media/Inter-roman.var.woff2?v=3.19": "/static/media/Inter-roman.var.ba4caefcdf5b36b438db.woff2",
+    "static/media/primeicons.eot": "/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/google.png": "/static/media/google.d0a1eab241b1f5222abe.png",
+    "static/media/primeicons.woff2": "/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "static/media/profilePic.png": "/static/media/profilePic.9e37e236b52fbd273106.png",
+    "static/media/businessman.png": "/static/media/businessman.c69c03fa0b202db5abfa.png",
+    "static/media/phone-call.png": "/static/media/phone-call.20a0ed4204215b0502d9.png",
+    "static/media/email.png": "/static/media/email.51b08bcbb5af7a861c31.png",
+    "index.html": "/index.html",
+    "main.9e54a20a.css.map": "/static/css/main.9e54a20a.css.map",
+    "main.78b45c1a.js.map": "/static/js/main.78b45c1a.js.map",
+    "453.9537af23.chunk.js.map": "/static/js/453.9537af23.chunk.js.map",
+    "213.ff2e7141.chunk.js.map": "/static/js/213.ff2e7141.chunk.js.map",
+    "732.b8c4c55b.chunk.js.map": "/static/js/732.b8c4c55b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e54a20a.css",
+    "static/js/main.78b45c1a.js"
+  ]
+}
