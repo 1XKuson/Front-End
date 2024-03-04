@@ -32,7 +32,7 @@ const EditPersonal = () => {
   const ProfessorID = cookies.get('ProfessorID');
   const [info, setInfo] = useState(
     {
-      ProfessorID: data.profdata.ProfessorID,
+      ProfessorID: ProfessorID,
       FirstNameTH: data.profdata.FirstNameTH,
       LastNameTH: data.profdata.LastNameTH,
       DateOfBirth: data.profdata.DateOfBirth,
@@ -119,7 +119,7 @@ const EditPersonal = () => {
   const handleDepartmentidchange = (e) => {
     setSelectedDepartmentID(e.target.value);
     updateInfo('DepartmentID', parseInt(e.target.value));
-    console.log(info);
+    console.log('Selected option:',info);
   };
   const handlegenderchange = (e) => {
     updateInfo('Gender', e.target.value);
@@ -147,7 +147,7 @@ const EditPersonal = () => {
 
       const responsePUT2 = await api.put('/Academic/edit_academic', {
         Faculty: info.Faculty,
-        AcademicRankPosition: "รศ.ดร.",
+        AcademicRankPosition: info.AcademicRankPosition,
         DepartmentID: info.DepartmentID,
         ProgramID: info.ProgramID,
         ProfessorID: ProfessorID,
