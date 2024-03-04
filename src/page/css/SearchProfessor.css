@@ -1,0 +1,91 @@
+@import "../../themecolor.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cardNameProfessor {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-input);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: start;
+    box-shadow: var(--shadow-button);
+}
+
+.imageProfessor {
+    background-color: transparent;
+    margin-right: 15px;
+}
+
+.imageProfessor img {
+    height: auto;
+    width: 85px;
+    border-radius: 10px;
+}
+
+.shortDetailProfessor {
+    background-color: transparent;
+}
+
+.searchNameOutput {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    background-color: transparent;
+}
+
+.searchDepartmentOutput {
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.searchAcademicRankPositionOutput {
+    font-size: 14px;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+
+/* .searchPerformance {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.headPerformance {
+    background-color: var(--white-text);
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+} */
+
+.toPageProfile {
+    /* display: flex;
+    justify-content: end; */
+    background-color: transparent;
+}
+
+/* ------ ver button ------------ */
+/* .btntoPageProfile {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--red-button-2);
+    border: 2px solid var(--red-button-2);
+    border-radius: 5px;
+    padding: 1px 4px;
+    background-color: transparent;
+    text-decoration: none;
+} */
+
+.btntoPageProfile {
+    font-size: 13px;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--red-button-2);
+}

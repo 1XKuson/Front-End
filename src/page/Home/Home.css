@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Prompt:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --red-opacity: rgba(188, 24, 25, 0.7);
+    --red-button-1: rgba(230, 55, 57, 0.45);
+    --red-button-2: #A5161A;
+    --red-button-text: #660808;
+    --white-text: #F5F3F4;
+    --shadow-box-2: 1px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    background-color: var(--white-text);
+}
+
+.Header {
+    width: 100%;
+    background-color: var(--red-button-text);
+    color: var(--white-text);
+    box-shadow: var(--shadow-navbar);
+    z-index: 2;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-text);
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-oriote {
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 3px 3px #8b3235;
+    background: transparent;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: var(--red-button-2);
+    background-color: var(--white-text);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.home-page {
+    text-align: center;
+    font-size: 16px;
+    background-image: url("https://i.pinimg.com/originals/b9/b9/d6/b9b9d6fd65f85b69b662c1356b80a3f2.jpg");
+    background-position: 35% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* padding-top: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.border {
+    border: 1px solid var(--white-text);
+    height: 2px;
+    border: none;
+    margin: 3% 10% 0 10%;
+    border-radius: 50%;
+}
+
+.p-name {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 180px 0px 10px 0px;
+    background-color: transparent;
+    color: var(--white-text);
+    position: relative;
+}
+
+.description {
+    margin: 20px 0px 30px 0px;
+    font-size: 18px;
+    background-color: transparent;
+    color: var(--white-text);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.search {
+    margin: 30px 20px 20px 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--red-button-2);
+    color: var(--white-text);
+    border: none;
+    box-shadow: var(--shadow-box-2);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.descip-page {
+    min-height: 80vh;
+    padding-top: 100px;
+    background-color: var(--white-text);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px 20px 0px 20px;
+}
+
+.descip-page .topic {
+    margin-left: 10%;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.descip-page .des {
+    font-size: 30px;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 45%;
+}
+
+.our-team {
+    min-height: 100vh;
+    padding-top: 60px;
+    text-align: center;
+    background-color: var(--white-text);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+}
+
+.member {
+    position: relative;
+    background: none;
+    padding-bottom: 100%;
+    border: 1px solid var(--red-button-2);
+    margin: 15px;
+}
+
+.member-info {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+}
+
+.member-img {
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    background-color: var(--white-text);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.member-img .info-pic {
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    right: 0;
+    padding-top: 5%;
+    background-color: var(--red-button-2);
+    overflow: hidden;
+}
+
+.info .member-name {
+    margin-top: 2vh;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.info .des {
+    font-size: 1rem;
+}
+
+.info .member-name, .info .position {
+    top: 50%;
+    right: 50%;
+    background: transparent;
+    color: var(--white-text);
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+    .p-name {
+        font-size: 38px;
+    }
+    .description {
+        margin: 10px 0px 30px 0px;
+    }
+    .descip-page .topic {
+        font-size: 27px;
+        font-weight: 600;
+        margin-left: 5%;
+    }
+    .descip-page .des {
+        font-size: 16px;
+        margin-left: 5%;
+        margin-top: 10px;
+        width: 85%;
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .info .member-name {
+        margin-top: 0.5vh;
+        font-size: 1.7rem;
+    }
+    .info .des {
+        font-size: 1rem;
+    }
+}

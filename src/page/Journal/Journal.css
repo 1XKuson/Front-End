@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Prompt:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --red-opacity: rgba(188, 24, 25, 0.7);
+    --red-button-1: rgba(230, 55, 57, 0.45);
+    --red-button-2: #A5161A;
+    --red-button-text: #660808;
+    --white-text: #F5F3F4;
+    --shadow-box-2: 1px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    background-color: var(--white-text);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+}
+
+.header {
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .text {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header .link{
+    color: var(--red-opacity);
+    font-size: 20px;
+}
+.profileimg {
+    width: 100%;
+    text-align: center;
+}
+
+.profileimg div {
+    width: 50%;
+    max-width: 240px;
+    min-width: 160px;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-box-2);
+    border-radius: 15px;
+    position: relative;
+}
+
+.profileimg div .profilepic {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.profess-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profess-detail .th-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profess-detail .en-name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.profess-detail .position {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.edu-detail {
+    width: 100%;
+}
+
+.edu-detail .group {
+    margin: 20px 0px 20px 0px;
+}
+
+.edu-detail .group .degree-list {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.edu-detail .group .field-list {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0px 0px 20px;
+}
+
+.edu-detail .group .institue-list {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.profile-detail {
+    width: 100%;
+}
+
+.profile-detail table {
+    width: 100%;
+}
+
+.profile-detail table  tr th {
+    text-align: left;
+    padding: 3px;
+}
+
+.profile-detail table  tr td {
+    padding-left: 5px;
+}
+
+.edu-detail .headlist {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.edu-detail .headPer {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0px 0px 20px;
+}
+
+.edu-detail .j-name {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0px 0px 40px;
+}
+
+.edu-detail table {
+    text-align: left;
+    margin: 5px 0px 0px 40px;
+}
+
+.edu-detail table tr th {
+    font-size: 14px;
+    /* padding: 0px 45px 10px 0px; */
+    vertical-align: top;
+    width: 99px;
+}
+
+.edu-detail table tr td {
+    font-size: 14px;
+    font-weight: 400;
+    vertical-align: top;
+    padding-left: 5px;
+}

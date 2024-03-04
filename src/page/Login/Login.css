@@ -1,0 +1,174 @@
+
+.t-Login{
+    box-shadow: none;
+    margin-top: 120px ;
+    margin-bottom: 32px;
+    min-width: 850px;
+}
+.t-Login h1{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    background-color: #dea99b;
+    font-family:'Prompt', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.login{
+    position: flex;
+    margin: auto;
+    padding-top: 20px;
+    width: 850px ;
+    height: 770px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background:rgba(220, 242, 241,0.1) ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+
+}
+
+.login h2{
+    /* position: absolute; */
+    background-color: rgb(222, 177, 164);
+    color: #000;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    height: 55px;
+}
+
+.login h3{
+    background-color: rgb(222, 177, 164);
+    color: #000;
+    text-align: center;
+    font-family: 'prompt', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+h4{
+    background-color: rgb(222, 177, 164);
+    color: #616161;
+    text-align: center;
+    font-family: 'prompt', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.GoogleLogin{
+    background-color: rgb(222, 177, 164);
+    height: 120px;
+    width: 750px;
+    margin-left: 50px;
+    align-items: center;
+    border-bottom: 2px solid #9C9C9C;
+}
+
+
+.GoogleCss{
+    background-color: #fff;
+    margin:auto;
+    align-items: center;
+    justify-content:space-around;
+    color: rgba(0, 0, 0, 0.54);
+    height: 80px;
+    width: 210px;
+    border: none;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px 0px;
+    font-size: 16px;
+    line-height: 48px;
+    display: flex;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.GoogleCss > span{
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 23px 27px 23px 0px;
+}
+
+.GoogleCss > img{
+    background-color: transparent;
+    width: 49px;
+    height: 50px;
+    flex-shrink: 0;
+    margin: 15px 15px 15px 26px;
+}
+
+form.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(222, 177, 164) ;
+}
+
+form.form-login input[type="text"]{
+    width: 590px;
+    height: 55px;
+    margin-bottom: 43px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    padding-left: 25px;
+    outline: none;
+}
+
+form.form-login input[type="password"]{
+    width: 590px;
+    height: 55px;
+    margin-bottom: 43px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    padding-left: 25px;
+    outline: none;
+}
+
+form.form-login input[type="submit"]{
+    display: flex;
+    width: 326px;
+    height: 69px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #F16322;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: 'prompt', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+}
+
+form.form-login input[type="submit"]:hover{
+    background: #a84618;
+}

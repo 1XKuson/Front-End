@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Prompt:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --color-back: #DEA99B;
+    --color-2: #616161;
+    --color-3: #131313;
+    --white-opacity: rgba(255,255,255,0.3);
+    --black-opacity: rgba(0,0,0,0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+
+.EditInfo {
+    margin-top: 67px;
+    background-color: var(--color-back);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+}
+
+.left-content {
+    width: 15vw;
+    align-items: center;
+}
+
+.leftcontainer {
+    height: 83vh;
+    background-color: var(--black-opacity);
+    border-radius: 20px;
+    margin: 0px 40px 0px 40px;
+}
+
+.leftcontainer ul {
+    font-size: 20px;
+    text-align: left;
+    list-style: none;
+    margin: 40px 30px 40px 30px;
+}
+
+.leftcontainer ul li {
+    padding-top: 30px;
+}
+
+.leftcontainer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.leftcontainer ul li a:hover {
+    color: var(--color-3);
+}
+
+.right-content {
+    width: 82vw;
+    background-color: var(--white-opacity);
+    border-radius: 20px;
+    height: 83vh;
+    margin-top: 41px;
+}
+
+.content {
+    margin: 35px;
+    color: #000000;
+}
+
+.profilepic {
+    border-radius: 30px;
+    width: 250px;
+    height: 300px;
+    margin: 30px;
+}
+
+label {
+    display: flex;
+    color: var(--color-3);
+    margin: 10px 0;
+}
+
+input {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 500px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.left-content a.active {
+    color: var(--color-3);
+}
+
+/* .EditInfo {
+    margin-top: 45px;
+    display: flex;
+    width: 20vw;
+    min-height: 100vh;
+}
+
+.left-content {
+    padding: 60px 30px 0px 30px;
+    flex: 1.5;
+    background: var(--color-back);
+}
+
+.left-content ul {
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+}
+
+.left-content ul li {
+    margin: 40px;
+}
+
+.left-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.left-content ul li a:hover {
+    color: var(--color-3);
+}
+
+.right-content {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.content {
+    padding: 100px;
+    flex: 6;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+} */

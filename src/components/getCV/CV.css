@@ -1,0 +1,139 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Prompt:wght@200;300;400;500;600;700&display=swap");
+body {
+    font-family: "Prompt", sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .resume {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .outProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .nameThai {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .nameEng {
+    font-size: 20px;
+  }
+
+  .statusLecture {
+    font-size: 15px;
+  }
+
+  .pictureProfile img {
+    width: 100px;
+  }
+
+  .under-line {
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 10px;
+  }
+
+  .line-st {
+    background-color: black;
+    width: 2px;
+    height: 100%;
+    margin: 0 20px 0 0;
+  }
+
+  .cont-edu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .headcont-edu {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .con-list {
+    margin: 5px 0;
+  }
+
+  .dCont {
+    font-size: 14px;
+  }
+
+  .profileContract {
+    width: 375px;
+  }
+
+  .profileContract img {
+    width: 15px;
+  }
+
+  .eduBackground {
+    display: flex;
+    align-items: center;
+  }
+
+  .groupEdu {
+    display: flex;
+  }
+
+  .profileEdu {
+    margin-right: 20px;
+    width: 375px;
+  }
+
+  .years {
+    font-size: 17px;
+    margin: 0 10px 0 0;
+  }
+
+  .coll {
+    margin: 5px 0;
+  }
+
+  .degreeCourse {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .university {
+    font-size: 12px;
+  }
+
+  .profilePerformance {
+    margin-bottom: 30px;
+  }
+
+  .headPerformance {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .profileList {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .h-list-performance {
+    font-weight: 600;
+  }
+
+  .p-list-performance {
+    font-weight: normal;
+    text-align: justify;
+  }
+
+  .teachInterest {
+    width: 50%;
+  }
+   */

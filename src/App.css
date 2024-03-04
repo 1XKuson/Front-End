@@ -1,0 +1,8 @@
+@import "themecolor.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Prompt:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Prompt', sans-serif;
+  /* background-color: var(--background-color); */
+  background-color: aqua;
+}

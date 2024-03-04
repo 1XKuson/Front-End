@@ -1,0 +1,28 @@
+:root {
+    --navbar-color: #D9D9D9;
+    --color-1: #F16322;
+    --color-2: #616161;
+    --color-3: #131313;
+    --color-4: white;
+    --color-5: #f3dfda;
+
+    --red-opacity: rgba(188, 24, 25, 0.7);
+    --red-button-1: rgba(230, 55, 57, 0.45);
+    --red-button-2: #A5161A;
+    --red-button-text: #660808;
+    --text-input: #5C5C5C;
+    --background-input: #D9D9D9;
+    --white-text: #F5F3F4;
+    --shadow-box-2: 1px 5px 5px rgb(0, 0, 0, 0.3);
+
+    --background-color : #DEA99B;
+
+    --shadow-box: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    --shadow-navbar: 0px 10px 10px rgb(0, 0, 0, 0.5);
+    --shadow-side-navbar: -7px 0px 70px rgb(0, 0, 0, 0.5);
+    --shadow-button: 0px 3px 5px rgb(0, 0, 0, 0.5);
+    
+    --font-head-name : 40px;
+
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+}

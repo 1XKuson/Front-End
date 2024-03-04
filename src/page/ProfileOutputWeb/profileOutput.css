@@ -1,0 +1,289 @@
+/* @import url(.../components/themecolor.css); */
+
+.profile-output {
+    margin: 120px 11vw;
+}
+
+.marginBottom{
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    margin: 0 0 50px 0;
+    display: flex;
+}
+
+.profile-picture {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+.box-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-thai {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.name-eng {
+    font-size: 30px;
+}
+
+.status-le {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.cont-edu {
+    display: flex;
+    justify-content: space-between;
+    resize: horizontal;
+}
+
+.profile-Cont {
+    background-color: var(--color-5);
+    margin-right: 20px;
+    padding: 30px 30px;
+    border-radius: 15px;
+    flex: auto;
+}
+
+.profile-edu{
+    background-color: var(--color-5);
+    margin-left: 20px;
+    padding: 30px 30px;
+    border-radius: 15px;
+    flex: auto;
+}
+
+/* .shadowBox{
+    box-shadow: var(--shadow-box);
+} */
+
+.head-profile {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.data-cont-group {
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+
+.h-profile {
+    font-weight: 600;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.data-cont{
+    padding-left: 20px;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.table-edu {
+    background-color: transparent;
+}
+
+tr {
+    background-color: transparent;
+}
+
+.table-edu td {
+    vertical-align: top;
+    background-color: transparent;
+}
+
+.data-edu {
+    padding-left: 10px;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.profile-Per{
+    background-color: var(--color-5);
+    padding: 30px 30px;
+    border-radius: 15px;
+    flex: auto;
+}
+
+.profile-list {
+    background-color: transparent;
+}
+
+ul.profile-list {
+    padding: 7px 25px 7px 25px;
+}
+
+.profile-list li {
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.h-list-performance {
+    font-weight: 600;
+    /* text-decoration: underline; */
+    background-color: transparent;
+}
+
+.d-list-performance {
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.p-list-performance {
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.line-Nstd {
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
+
+.container-Nstd {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.p-Nstd {
+    text-align: center;
+    background-color: transparent;
+}
+
+.h-Nstd {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 0 10px 0;
+    background-color: transparent;
+}
+
+.num-Nstd {
+    font-size: 45px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.line-NNstd {
+    background-color: black;
+    height: auto;
+    width: 2px;
+    margin: 0 50px;
+}
+
+@media (max-width: 1100px) {
+    .table-edu tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .data-edu {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cont-edu {
+        flex-direction: column;
+    }
+
+    .profile-Cont {
+        margin-right: 0;
+    }
+
+    .profile-edu {
+        margin-left: 0;
+    }
+
+    .data-cont-group {
+        display: flex;
+    }
+
+    .data-cont {
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 700px) {
+    .name {
+        visibility: hidden;
+    }
+
+    .profile-name {
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 250px;
+        margin: 0 0 10px 0;
+    }
+
+    .box-name {
+        align-items: center;
+        margin: 0 0 5px 0;
+    }
+
+    .name-thai {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .name-eng {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .status-le {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .data-cont-group {
+        flex-direction: column;
+    }
+
+    .data-cont {
+        padding-left: 20px;
+    }
+
+    .container-Nstd {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .p-Nstd {
+        display: flex;
+        align-items: center;
+        padding: 0 0 10px 20px;
+    }
+
+    .h-Nstd {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .num-Nstd {
+        font-size: 20px;
+        margin: 0 0 0 20px;
+    }
+}

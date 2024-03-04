@@ -1,0 +1,197 @@
+.container{
+    margin: auto;
+    /* padding: 1vh 7vw; */
+    font-weight: bold;
+    width: 85%;
+    min-width: 300px;
+}
+
+.centre{
+    padding-top: 120px;
+    text-align: center;
+}
+.lh1{
+    font-size: 32px;
+}
+
+.lh2{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.edit-data{
+    display: flex;
+    flex-direction: column;
+}
+.edit-data label{
+    margin-top: 2%;
+    font-size: 16px;
+}
+.edit-data select{
+    width:100%;
+}
+
+.img-container{
+    width: 100%;
+    text-align: center;
+} 
+
+.img-container div {
+    width: 50%;
+    max-width: 240px;
+    min-width: 160px;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+.img-container div img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.img-container div button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #A5161A;
+    height: 17%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container div button > img{
+    background-color: transparent;
+    object-fit: contain;
+}
+
+.edit-data input{
+    height: 4vh;
+    width: 100% ;
+    background-color: #d9d9d9;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.edit-data input[type="radio"]{
+    height: 3.5vh;
+    width: 10% !important;
+    background-color: #d9d9d9;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.edit-data select {
+    background-color:#d9d9d9 ;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    height: 4vh;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 15px;
+    border: solid #A5161A 2px;
+    border-radius: 7px;
+    height: 5vh;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button.buttonInfo.cancel[type="button"]{
+    color: #A5161A;
+    background-color: #F5F3F4;
+    margin-top: 35px;
+
+}
+
+button.buttonInfo.submit[type="submit"]{
+    color: #F5F3F4;
+    background-color: #A5161A;
+    margin-bottom: 30px;
+}
+
+.container .edit-data p{
+    width: 100%;
+    border: 1px solid ;
+    margin-top: 15px;
+}
+
+.radio-options-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh; /* Adjust the margin as needed */
+  }
+
+  .radio-option label {
+    width:80%;
+    margin-top: 0 !important;
+    margin-left: 1%;
+  }
+  
+  .radio-input {
+    margin-top: 10px !important;
+  }
+
+  .participator{
+    border-spacing: 0;
+    background-color: transparent;
+  }
+  
+.participator tr th{
+    border:none;
+    font-size: 14px !important; 
+    text-align: left;
+    padding: 7px;
+    border-radius: 10px 10px 0 0 ;
+    background-color: #7c7c7c;
+    outline: none;
+  }
+.participator tr td {
+    border: none;
+    outline: none;
+    background-color: #d9d9d9;
+    padding: 5px;
+    
+}
+.participator tr:last-child td{
+    border-radius: 0 0 10px 10px;
+    text-align: right;
+}
+
+option {
+    background-color: #7c7c7c; /* Set the background color of the options */
+}
+
+
