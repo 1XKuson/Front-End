@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
 import "./App.css";
-import Login from "./page/Login/Login.js";
-import Root from './routes/root.js';
+import { Outlet } from "react-router-dom";
+import NavbarMobile from "./components/Navbar/navbarMobile.js";
 function App() {
   return (
     <div>
-      <Root />
+      <NavbarMobile />
       <Outlet />
     </div>
   );
 }
+
 
 export default App;

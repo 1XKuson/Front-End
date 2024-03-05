@@ -2,7 +2,7 @@ import '../Journal/Journal.css';
 import '../Personal/personalEdit.css';
 import '../EducationBackground/educateEdit.css';
 import profilePic from '../../page/EditInfo/profilePic.png';
-import { useState , useEffect, useContext } from 'react';
+import { useState , useEffect } from 'react';
 import api from '../../api/api.js';
 import ThaiDate from '../../components/date-convert/thaidate.js';
 import Cookies from 'universal-cookie';
@@ -79,6 +79,7 @@ function SummaryProfile() {
         const _Proceeding = await api.get(`/proceeding/GETProceeding/${ProfessorID}`)
             setProceeding(_Proceeding.data.results)
     }
+
     useEffect(() => {
        fetchJournal();
        fetchEdu();
@@ -179,38 +180,38 @@ function SummaryProfile() {
                                     <table>
                                         <tr>
                                             <th>ประเภทระดับผลงาน</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{setType(element.TypeID)}</td>
                                         </tr>
                                         <tr>
                                             <th>ระดับ</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.Level}</td>
                                         </tr>
                                         <tr>
                                             <th>ตีพิมพ์ในวารสารที่อยู่ในฐานข้อมูล</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.AcadDatabase}</td>
                                         </tr>
                                         <tr>
                                             <th>URL</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.URL}</td>
                                         </tr>
                                         <tr>
                                             <th>DOI</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.DOI}</td>
                                         </tr>
                                         <tr>
                                             <th>ผู้มีส่วนร่วม</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.AuthorProfessorID}</td>
                                         </tr>
                                         <tr>
                                             <th>คำอธิบาย</th>
-                                            <td>:</td>
-                                            <td>{element.Description}</td>
+                                            <td className='doubleColon'>:</td>
+                                            <td className='description_'>{element.Description}</td>
                                         </tr>
                                     </table>
                                 </div>
@@ -225,48 +226,48 @@ function SummaryProfile() {
                                     <table>
                                         <tr>
                                             <th>ประเภทระดับผลงาน</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{setType(element.TypeID)}</td>
                                         </tr>
                                         <tr>
                                             <th>ระดับ</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.Level}</td>
                                         </tr>
                                         <tr>
                                             <th>ตีพิมพ์ในวารสารที่อยู่ในฐานข้อมูล</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.AcadDatabase}</td>
                                         </tr>
                                         <tr>
                                             <th>อ้างอิงจากฐานข้อมูล</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.Publisher}</td>
                                         </tr>
                                         <tr>
                                             <th>ระดับ Quartile</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.Quatile}</td>
                                         </tr>
                                         <tr>
                                             <th>URL</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.URL}</td>
                                         </tr>
                                         <tr>
                                             <th>DOI</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.DOI}</td>
                                         </tr>
                                         <tr>
                                             <th>ผู้มีส่วนร่วม</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.AuthorProfessorID}</td>
                                         </tr>
                                         <tr>
                                             <th>คำอธิบาย</th>
-                                            <td>:</td>
-                                            <td>{element.Description}</td>
+                                            <td className='doubleColon'>:</td>
+                                            <td className='description_'>{element.Description}</td>
                                         </tr>
                                     </table>
                                 </div>

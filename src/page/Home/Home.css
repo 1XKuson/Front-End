@@ -213,6 +213,21 @@
     margin-bottom: 15px;
 }
 
+.footerr {
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red-button-text);
+}
+
+.powered {
+    background: transparent;
+    font-size: 1rem;
+    color: var(--white-text);
+}
+
 @media (max-width: 500px) {
     .p-name {
         font-size: 38px;
@@ -242,4 +257,5 @@
     .info .des {
         font-size: 1rem;
     }
+
 }

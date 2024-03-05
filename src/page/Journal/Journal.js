@@ -29,27 +29,49 @@ function JournalPage() {
     const [info2, setInfo2] = useState([])
 
 
-    const fetchdata = async () => {
+    const fetchJournal = async () => {
         try {
-            const response1 = await api.get(`/proceeding/GETProceeding/${ProfessorID}`)
-            setProceeding(response1.data.results)
-            const response2 = await api.get(`/proceeding/GETJournal/${ProfessorID}`)
-            setJournal(response2.data.results)
-            const response3 = await api.get(`/jointtablecv/professor_academic/${ProfessorID}`)
-            setInfo1(response3.data.results[0])
+        const response2 = await api.get(`/proceeding/GETJournal/${ProfessorID}`)
+        setJournal(response2.data.results)
+        }
+        catch (error) {
+            console.log('error', error)
+        }
+    }
+    const fetchacademic = async () => {
+        try {
+       const response3 = await api.get(`/jointtablecv/professor_academic/${ProfessorID}`)
+        setInfo1(response3.data.results[0])
+        }
+        catch (error) {
+            console.log('error', error)
+        }
+    }
+    const fetchProceeding = async () => {
+        try {
+         const response1 = await api.get(`/proceeding/GETProceeding/${ProfessorID}`)
+        setProceeding(response1.data.results)
+         
+        }
+        catch (error) {
+            console.log('error', error)
+        }
+    }
+    const fetchprof = async () => {
+        try {
             const response4 = await api.get(`/Academic/getdataby_profID/${ProfessorID}`)
             setInfo2(response4.data.results[0])
-            // console.log(todo)
-            // console.log(info1)
-            // console.log(info2)
-
-        } catch (error) {
+        }
+        catch (error) {
             console.log('error', error)
         }
     }
 
     useEffect(() => {
-       fetchdata()
+       fetchJournal();
+       fetchProceeding();
+       fetchacademic(); // fetch
+       fetchprof();
     }, [])
       
     return (
@@ -77,43 +99,44 @@ function JournalPage() {
                             return(
                                 <div className='project' key={index}>
                                     <div className='headlist'>โครงการบริการวิชาการ</div>
-                                    <div className='headPer'>{element.Topic} ({element.PublishedDate && (<ThaiDate isoDate={element.PublishedDate}/>)})</div>
+                                    <div className='headPer'>{element.Topic}</div>
+                                    <div className='datePer'>({element.PublishedDate && (<ThaiDate isoDate={element.PublishedDate}/>)})</div>
                                     {/* <div className='j-name'>{element.journalName}</div> */}
                                     <table>
                                         <tr>
                                             <th>ประเภทระดับผลงาน</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{setType(element.TypeID)}</td>
                                         </tr>
                                         <tr>
                                             <th>ระดับ</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.Level}</td>
                                         </tr>
                                         <tr>
                                             <th>ตีพิมพ์ในวารสารที่อยู่ในฐานข้อมูล</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.AcadDatabase}</td>
                                         </tr>
                                         <tr>
                                             <th>URL</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.URL}</td>
                                         </tr>
                                         <tr>
                                             <th>DOI</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.DOI}</td>
                                         </tr>
                                         <tr>
                                             <th>ผู้มีส่วนร่วม</th>
-                                            <td>:</td>
+                                            <td className='doubleColon'>:</td>
                                             <td>{element.AuthorProfessorID}</td>
                                         </tr>
                                         <tr>
                                             <th>คำอธิบาย</th>
-                                            <td>:</td>
-                                            <td>{element.Description}</td>
+                                            <td className='doubleColon'>:</td>
+                                            <td className='description_'>{element.Description}</td>
                                         </tr>
                                     </table>
                                 </div>

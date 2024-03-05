@@ -15,6 +15,7 @@ function ProfileEdit() {
     const [profdata, setProfdata] = useState([])
     const [academic, setAcademic] = useState([])
     const ProfessorID = cookies.get('ProfessorID');
+    console.log("herer: " + ProfessorID);
     const [image,setImage] = useState([]);
 
     
@@ -103,6 +104,7 @@ function ProfileEdit() {
                 </div>
 
                 <div className='to-top-btn'></div>
+              
             </div>
         </>
     )

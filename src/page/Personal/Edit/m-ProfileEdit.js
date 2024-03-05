@@ -30,6 +30,8 @@ const EditPersonal = () => {
   const cookies = new Cookies();
   console.log(data);
   const ProfessorID = cookies.get('ProfessorID');
+
+  console.log("herer: " + ProfessorID);
   const [info, setInfo] = useState(
     {
       ProfessorID: ProfessorID,
@@ -50,6 +52,8 @@ const EditPersonal = () => {
       AcademicRankPositionEng: data.profdata.AcademicRankPositionEng
     }
   );
+
+  console.log('set info :' , info);
   const [selectedDepartmentID, setSelectedDepartmentID] = useState(null);
   const [selectedProgramId, setSelectedProgramId] = useState(null);
   const [profileImage, setProfileImage] = useState('https://cdn.imgchest.com/files/e4gdcverzr4.png');
@@ -130,7 +134,7 @@ const EditPersonal = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      console.log("here", info);
+      console.log("route 1", info);
       const responsePUT1 = await api.put('/professor/PUTProf', {
         FirstNameTH: info.FirstNameTH,
         LastNameTH: info.LastNameTH,
@@ -144,14 +148,13 @@ const EditPersonal = () => {
         FirstNameEng: info.FirstNameEng,
         ProfessorID: ProfessorID
       });
-
+      console.log("route 2", info);
       const responsePUT2 = await api.put('/Academic/edit_academic', {
         Faculty: info.Faculty,
         AcademicRankPosition: info.AcademicRankPosition,
         DepartmentID: info.DepartmentID,
         ProgramID: info.ProgramID,
-        ProfessorID: ProfessorID,
-
+        ProfessorID: ProfessorID
       });
       console.log('Submission PUT1 successful:', responsePUT1.data);
       console.log('Submission PUT1 successful:', responsePUT2.data);
@@ -205,7 +208,7 @@ const EditPersonal = () => {
             type="text"
             placeholder="คำนำหน้า"
             value={info.AcademicRankPosition}
-            onChange={(e) => updateInfo('Prefix', e.target.value)}
+            onChange={(e) => updateInfo('AcademicRankPosition', e.target.value)}
           />
           <label>ชื่อ (ภาษาไทย)</label>
           <input

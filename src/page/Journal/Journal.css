@@ -80,12 +80,12 @@
 }
 
 .profess-detail .th-name {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .profess-detail .en-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -146,30 +146,54 @@
 .edu-detail .headPer {
     font-size: 18px;
     font-weight: 600;
-    margin: 5px 0px 0px 20px;
+    margin: 5px 0px 0px 10px;
+}
+
+.edu-detail .datePer {
+    margin: 0 0 0 10px;
 }
 
 .edu-detail .j-name {
     font-size: 14px;
     font-weight: 400;
-    margin: 5px 0px 0px 40px;
+    margin: 5px 0px 0px 20px;
 }
 
 .edu-detail table {
     text-align: left;
-    margin: 5px 0px 0px 40px;
+    margin: 5px 0px 0px 20px;
+}
+
+.edu-detail table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.edu-detail .doubleColon {
+    display: none;
 }
 
 .edu-detail table tr th {
-    font-size: 14px;
+    font-size: 1rem;
+    font-weight: 600;
     /* padding: 0px 45px 10px 0px; */
     vertical-align: top;
-    width: 99px;
+    width: 100%;
 }
 
 .edu-detail table tr td {
+    width: 95%;
     font-size: 14px;
     font-weight: 400;
     vertical-align: top;
     padding-left: 5px;
 }
+
+.edu-detail table tr .description_ {
+    text-align: justify;
+}
+
+/* .project {
+    width: 90%;
+} */

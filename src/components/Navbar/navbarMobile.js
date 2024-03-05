@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../Auth/AuthWrapper';
 import UserImg from './user.png';
 import './navbarMobile.css'
@@ -7,12 +7,16 @@ import Cookies from 'universal-cookie';
 const NavbarMobile = () => {
     const { user,logout } = useAuth();
     const [isOpen, setIsOpen] = useState(true);
-
+    const navigate = useNavigate();
     const [isMenuOpen, setMenuOpen] = useState(false);
     const cookies = new Cookies();
     const FirstNameTH = cookies.get('FirstNameTH');
   const handleLinkClick = () => {
     // Close the menu when a link is clicked
+    setMenuOpen(false);
+  };
+  const handleLinkClick1 = () => {
+    navigate('/Personal');
     setMenuOpen(false);
   };
     return (
@@ -62,7 +66,7 @@ const NavbarMobile = () => {
             </div> */}
             <div className="navMobile">
                 <div className="navContainer">
-                    <Link to="/Home" className="headNav">ระบบฐานข้อมูลอาจารย์</Link>
+                    <Link to="/" className="headNav">ระบบฐานข้อมูลอาจารย์</Link>
 
                     <input type='checkbox' id='check' checked={isMenuOpen} onChange={() => setMenuOpen(!isMenuOpen)}></input>
                     <label className='iconMenu' for='check'>
@@ -77,13 +81,20 @@ const NavbarMobile = () => {
                     <nav className={`sideNav ${isMenuOpen ? 'open' : ''}`}>
                         <div className='inSideNav'>
                             <Link to="/SearchProfile" onClick={handleLinkClick}>Search</Link>
-                            {/* <Link to="/" className='exportToCV'>Export CV</Link> */}
-                            {!user.isAuthenticated && <Link to="/Login">เข้าสู่ระบบ</Link>}
+                            
+                            {!user.isAuthenticated && <Link to="/Login" onClick={handleLinkClick}>เข้าสู่ระบบ</Link>}
                             {user.isAuthenticated && (
                                 <>
-                                    <Link to="/"onClick={handleLinkClick}>
-                                        <img src={UserImg} alt="User" /> {FirstNameTH}
-                                    </Link>
+                                    <div className='Name-navbar'>
+                                        <Link to="/Personal">
+                                        <img src={UserImg} alt="User" onClick={handleLinkClick1}/> {FirstNameTH} 
+                                        </Link>
+
+                                        <div className='export-cv'>
+                                        <Link to="/getCV" className='exportToCV'>Export CV</Link>
+                                        </div>
+                                   
+                                   </div>
                                     <div className="pageProfile">
                                         <Link to="/Personal"onClick={handleLinkClick}>ประวัติส่วนตัว</Link>
                                         <Link to="/EducationBackground"onClick={handleLinkClick}>ประวัติการศึกษา</Link>
@@ -96,7 +107,7 @@ const NavbarMobile = () => {
                                         <Link to="/"onClick={handleLinkClick}>ประสบการณ์การฝึกงาน</Link>
                                         <Link to="/"onClick={handleLinkClick}>อาจารย์ที่ปรึกษา</Link>
                                     </div>
-                                    <Link className='linkLogout' to="/Home" onClick={logout}>ออกจากระบบ</Link>
+                                    <Link className='linkLogout' to="/" onClick={logout}>ออกจากระบบ</Link>
                                 </>
                             )}
                             {/* <Link to="/">

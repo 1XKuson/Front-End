@@ -8,10 +8,10 @@ function Home() {
     }
     return(
         <>
-            <div className="Header">
+            {/* <div className="Header">
                 <div className="logo-oriote">ORIOTE</div>
                 <a href="/Login" className="login-btn">เข้าสู่ระบบ</a>
-            </div>
+            </div> */}
 
             <div className="home-page">
                 <div className="p-name">ระบบฐานข้อมูลอาจารย์</div>
@@ -25,8 +25,8 @@ function Home() {
             </div>
 
             <div className="descip-page">
-                <div className="topic">เกี่ยวกับ ระบบฐานข้อมูลอาจารย์</div>
-                <div className="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sapiente laudantium. Perspiciatis voluptas autem vitae veniam similique incidunt quia temporibus.</div>
+                <div className="topic">ระบบฐานข้อมูลอาจารย์</div>
+                <div className="des">University Personnel Information Management Website เป็นแอปพลิเคชันที่ใช้ในการบันทึก จัดการและแสดงผลข้อมูลของอาจารย์โดยจะแสดงข้อมูลที่สำคัญเช่น ข้อมูลส่วนตัว ประวัติการศึกษา ช่องทางการติดต่อ งานวิจัย วิชาที่สอน ความถนัดหรือความสนใจทางด้านวิชาการ ทั้งยังสามารถสร้าง CV (Curriculum Vitae) ของอาจารย์แต่ละท่านได้อีกด้วย</div>
             </div>
 
             <div className="our-team">
@@ -116,6 +116,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="footerr">
+                <div className='powered'>Powered By ORIOTE Team</div>
             </div>
         </>
     )

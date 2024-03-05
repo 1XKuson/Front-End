@@ -4,12 +4,11 @@ import './index.css';
 import reportWebVitals from './reportWebVitals.js';
 
 import 'primeicons/primeicons.css';
-import { PrimeReactProvider } from 'primereact/api';
 import 'primeflex/primeflex.css';  
 import 'primereact/resources/primereact.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 
-import Root from './routes/root.js';
+import App from './App.js';
 import Login from "./page/Login/Login.js";
 import SearchProfile from './page/Search/SearchProfile.js';
 import Profile from './page/ProfileOutputWeb/profileOutput.js';
@@ -51,9 +50,13 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element:  <App/>,
     errorElement: <NotFoundPage />,
-    children: [ {
+    children: [ 
+      {
+        path: "/",
+        element: <Home />
+      },{
       path: "/Login",
       element: <Login />
     }, {
@@ -103,10 +106,7 @@ const router = createBrowserRouter([
     ]
     
   },
-  {
-    path: "/home",
-    element: <Home />
-  },{
+ {
     path: "/getCV",
     element: <CV />
   }
